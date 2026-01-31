@@ -49,6 +49,10 @@ mv ./"Plymouth Theme"/plymouth-wait-and-log.sh /usr/local/bin/
 systemctl --enable feed-plymouth-logs.service
 
 
+#Enable theme
+plymouth-set-default-theme -R theme
+
+
 
 
 
