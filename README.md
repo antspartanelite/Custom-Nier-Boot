@@ -4,7 +4,7 @@
 
 #Move Grub Theme to GRUB directory
 
-mv ./"Grub Theme"/Yorha-UI /boot /boot/grub/themes/
+mv ./"Grub Theme"/Yorha-UI /boot/grub/themes/
 
 
 #Add or update the following in /etc/default/grub
