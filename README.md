@@ -50,6 +50,7 @@ systemctl --enable feed-plymouth-logs.service
 
 
 #Enable theme
+
 plymouth-set-default-theme -R theme
 
 
