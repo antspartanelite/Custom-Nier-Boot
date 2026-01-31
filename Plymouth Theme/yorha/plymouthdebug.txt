@@ -1,0 +1,184 @@
+02:11:06.699 ../plymouth/src/main.c:2070:check_logging                     : checking if console messages should be redirected and logged
+02:11:06.699 ../plymouth/src/main.c:2082:check_logging                     : logging will be enabled!
+02:11:06.699 ../plymouth/src/main.c:2154:initialize_environment            : source built on Nov  5 2025
+02:11:06.699 ../plymouth/src/main.c:2164:initialize_environment            : Making sure /run/plymouth exists
+02:11:06.699 ../plymouth/src/libply/ply-utils.c:639:ply_create_directory   : directory '/run/plymouth' already exists
+02:11:06.699 ../plymouth/src/main.c:2168:initialize_environment            : initialized minimal work environment
+02:11:06.699 ../plymouth/src/main.c:736:get_cache_file_for_mode            : returning cache file '/var/lib/plymouth/boot-duration'
+02:11:06.699 ../plymouth/src/main.c:314:load_settings                      : Trying to load /etc/plymouth/plymouthd.conf
+02:11:06.699 ../plymouth/src/libply/ply-key-file.c:174:ply_key_file_load_gr: trying to load group Daemon
+02:11:06.699 ../plymouth/src/libply/ply-key-file.c:261:ply_key_file_load_gr: key file has no more groups
+02:11:06.699 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'ThemeDir'
+02:11:06.699 ../plymouth/src/main.c:297:get_theme_path                     : Theme /run/plymouth/themes//yorha/yorha.plymouth not found
+02:11:06.699 ../plymouth/src/main.c:294:get_theme_path                     : Theme is /usr/share/plymouth/themes//yorha/yorha.plymouth
+02:11:06.699 ../plymouth/src/main.c:332:load_settings                      : Splash delay is set to 0.000000
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'DeviceTimeout'
+02:11:06.700 ../plymouth/src/main.c:337:load_settings                      : Device timeout is set to nan
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'DeviceScale'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'UseSimpledrm'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'UseSimpledrmNoLuks'
+02:11:06.700 ../plymouth/src/main.c:454:find_system_default_splash         : System configured theme file is '/usr/share/plymouth/themes//yorha/yorha.plymouth'
+02:11:06.700 ../plymouth/src/main.c:314:load_settings                      : Trying to load /run/plymouth/plymouthd.defaults
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:83:ply_key_file_open_fil: Failed to open key file /run/plymouth/plymouthd.defaults: No such file or directory
+02:11:06.700 ../plymouth/src/main.c:464:find_distribution_default_splash   : failed to load /run/plymouth/plymouthd.defaults, trying /usr/share/plymouth/
+02:11:06.700 ../plymouth/src/main.c:314:load_settings                      : Trying to load /usr/share/plymouth/plymouthd.defaults
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:174:ply_key_file_load_gr: trying to load group Daemon
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:261:ply_key_file_load_gr: key file has no more groups
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'ThemeDir'
+02:11:06.700 ../plymouth/src/main.c:297:get_theme_path                     : Theme /run/plymouth/themes//bgrt/bgrt.plymouth not found
+02:11:06.700 ../plymouth/src/main.c:294:get_theme_path                     : Theme is /usr/share/plymouth/themes//bgrt/bgrt.plymouth
+02:11:06.700 ../plymouth/src/main.c:337:load_settings                      : Device timeout is set to 8.000000
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'DeviceScale'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'UseSimpledrm'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'UseSimpledrmNoLuks'
+02:11:06.700 ../plymouth/src/main.c:472:find_distribution_default_splash   : Distribution default theme file is '/usr/share/plymouth/themes//bgrt/bgrt.plymouth'
+02:11:06.700 ../plymouth/src/main.c:928:plymouth_should_show_default_splash: checking if plymouth should show default splash
+02:11:06.700 ../plymouth/src/main.c:956:plymouth_should_show_default_splash: using default splash because kernel command line has option "splash"
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:174:ply_key_file_load_gr: trying to load group NONE
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'KEYMAP'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'XKBLAYOUT'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'XKBMODEL'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'XKBVARIANT'
+02:11:06.700 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'XKBOPTIONS'
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-device-manager.c:833:pa: KEYMAP: (null), XKBLAYOUT: (null), XKBMODEL (null), XKBVARIANT: (null), XKBOPTIONS: (null)
+
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-terminal.c:650:ply_term: trying to open terminal '/dev/tty'
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-terminal.c:632:ply_term: terminal '/dev/tty' will be line buffered
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-terminal.c:443:ply_term: looking up terminal text geometry
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-terminal.c:455:ply_term: terminal is now 80x24 text cells
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-device-manager.c:1205:c: checking for consoles
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-device-manager.c:946:ad: opening /sys/class/tty/console/active
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-device-manager.c:954:ad: reading file
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-device-manager.c:994:ad: console /dev/tty found!
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-device-manager.c:1306:p: udev support disabled, creating fallback devices
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-device-manager.c:1111:c: creating devices for  (renderer type: 0) (terminal: /dev/tty)
+02:11:06.700 ../plymouth/src/libply-splash-core/ply-renderer.c:247:ply_rend: trying to open renderer plugin /usr/lib/plymouth/renderers/x11.so
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-renderer.c:267:ply_rend: opened renderer plugin /usr/lib/plymouth/renderers/x11.so
+02:11:06.715 ../plymouth/src/main.c:1101:on_keyboard_added                 : listening for keystrokes
+02:11:06.715 ../plymouth/src/main.c:1105:on_keyboard_added                 : listening for escape
+02:11:06.715 ../plymouth/src/main.c:1109:on_keyboard_added                 : listening for backspace
+02:11:06.715 ../plymouth/src/main.c:1113:on_keyboard_added                 : listening for enter
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-device-manager.c:1019:c: Adding displays for 1 heads
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-terminal.c:443:ply_term: looking up terminal text geometry
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-terminal.c:446:ply_term: could not read terminal text geometry: Input/output error
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-device-manager.c:1055:c: adding text display for terminal /dev/tty
+02:11:06.715 ../plymouth/src/main.c:2613:main                              : entering event loop
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-terminal.c:430:on_tty_d: tty disconnected (fd 7)
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-terminal.c:376:ply_term: trying to reopen terminal '/dev/tty' (attempt 0)
+02:11:06.715 ../plymouth/src/libply-splash-core/ply-terminal.c:605:ply_term: Unable to open terminal device '/dev/tty': No such device or address
+02:11:06.715 ../plymouth/src/libply/ply-event-loop.c:1142:ply_event_loop_fr: freeing destination (1, 0x7f45eda11560, 0x7f45eda0e700) of fd 7
+02:11:06.715 ../plymouth/src/ply-boot-server.c:395:print_connection_process: connection is from pid 38029 (plymouth --show-splash) with parent pid 38028 (sudo plymouth --show-splash)
+02:11:06.715 ../plymouth/src/ply-boot-server.c:494:ply_boot_connection_on_r: got show splash request
+02:11:06.715 ../plymouth/src/main.c:883:plymouth_should_ignore_show_splash_: checking if plymouth should be running
+02:11:06.715 ../plymouth/src/main.c:1050:on_show_splash                    : at least one display already available, so loading splash
+02:11:06.715 ../plymouth/src/main.c:928:plymouth_should_show_default_splash: checking if plymouth should show default splash
+02:11:06.715 ../plymouth/src/main.c:956:plymouth_should_show_default_splash: using default splash because kernel command line has option "splash"
+02:11:06.715 ../plymouth/src/main.c:481:show_default_splash                : Showing splash screen
+02:11:06.716 ../plymouth/src/main.c:489:show_default_splash                : Trying system default splash
+02:11:06.716 ../plymouth/src/main.c:1848:load_theme                        : Loading boot splash theme '/usr/share/plymouth/themes//yorha/yorha.plymouth'
+02:11:06.716 ../plymouth/src/libply/ply-key-file.c:174:ply_key_file_load_gr: trying to load group Plymouth Theme
+02:11:06.716 ../plymouth/src/libply/ply-key-file.c:174:ply_key_file_load_gr: trying to load group script
+02:11:06.716 ../plymouth/src/libply/ply-key-file.c:174:ply_key_file_load_gr: trying to load group script-env-vars
+02:11:06.716 ../plymouth/src/libply/ply-key-file.c:261:ply_key_file_load_gr: key file has no more groups
+02:11:06.716 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'MonospaceFont'
+02:11:06.716 ../plymouth/src/libply/ply-key-file.c:358:ply_key_file_get_raw: key file does not have entry for key 'ConsoleLogTextColor'
+02:11:06.716 ../plymouth/src/main.c:1864:load_theme                        : attaching plugin to event loop
+02:11:06.716 ../plymouth/src/main.c:1867:load_theme                        : attaching progress to plugin
+02:11:06.716 ../plymouth/src/libply-splash-core/ply-boot-splash.c:142:ply_b: adding 3840x2160 pixel display
+02:11:06.716 ../plymouth/src/libply-splash-core/ply-device-manager.c:1370:p: activating renderers
+02:11:06.716 ../plymouth/src/libply-splash-core/ply-boot-splash.c:547:ply_b: showing splash screen
+02:11:06.719 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text ' ' has dimensions 4x23
+02:11:06.719 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text ' ' has dimensions 4x23
+02:11:06.719 ../plymouth/src/libply-splash-graphics/ply-console-viewer.c:85: Using console viewer instead of kernel framebuffer console
+02:11:06.719 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:06.719 ../plymouth/src/plugins/splash/script/plugin.c:511:show_splash: starting boot animation
+02:11:06.719 ../plymouth/src/plugins/splash/script/plugin.c:375:start_anima: parsing script file
+02:11:06.723 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text ' ' has dimensions 8x19
+02:11:06.723 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text ' ' has dimensions 8x19
+02:11:06.723 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:06.723 ../plymouth/src/plugins/splash/script/plugin.c:352:start_scrip: executing script file
+02:11:06.928 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'L O A D I N G' has dimensions 582x132
+02:11:06.928 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'L O A D I N G' has dimensions 582x132
+02:11:06.928 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'L O A D I N G' has dimensions 582x132
+02:11:06.928 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:06.929 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text ' - BOOTING SYSTEM' has dimensions 602x88
+02:11:06.929 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text ' - BOOTING SYSTEM' has dimensions 602x88
+02:11:06.929 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text ' - BOOTING SYSTEM' has dimensions 602x88
+02:11:06.930 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:06.930 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'ComMAA' has dimensions 116x37
+02:11:06.930 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'ComMAA' has dimensions 116x37
+02:11:06.930 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'ComMAA' has dimensions 116x37
+02:11:06.930 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:07.000 ../plymouth/src/libply-splash-core/ply-boot-splash.c:560:ply_b: (this is an initial showing)
+02:11:07.000 ../plymouth/src/libply-splash-core/ply-boot-splash.c:564:ply_b: Pausing 1 already added displays
+02:11:07.000 ../plymouth/src/libply-splash-core/ply-device-manager.c:1403:p: activating keyboards
+02:11:07.000 ../plymouth/src/libply-splash-core/ply-keyboard.c:376:ply_keyb: Watching for keyboard input from renderer
+02:11:07.000 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'CommenYIF' has dimensions 152x37
+02:11:07.000 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'CommenYIF' has dimensions 152x37
+02:11:07.000 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'CommenYIF' has dimensions 152x37
+02:11:07.000 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:07.048 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'CommencinTUI' has dimensions 193x37
+02:11:07.048 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'CommencinTUI' has dimensions 193x37
+02:11:07.048 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'CommencinTUI' has dimensions 193x37
+02:11:07.048 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:07.048 ../plymouth/src/libply/ply-event-loop.c:1142:ply_event_loop_fr: freeing destination (1, 0x564a5197e5b0, 0x564a519820b0) of fd 15
+02:11:07.065 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing SHVH' has dimensions 244x37
+02:11:07.065 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing SHVH' has dimensions 244x37
+02:11:07.065 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing SHVH' has dimensions 244x37
+02:11:07.065 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:07.104 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing SystCFN' has dimensions 276x37
+02:11:07.104 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing SystCFN' has dimensions 276x37
+02:11:07.104 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing SystCFN' has dimensions 276x37
+02:11:07.104 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:07.120 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System ZVC' has dimensions 320x37
+02:11:07.120 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System ZVC' has dimensions 320x37
+02:11:07.120 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System ZVC' has dimensions 320x37
+02:11:07.120 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:07.137 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System CheIFU' has dimensions 362x37
+02:11:07.137 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System CheIFU' has dimensions 362x37
+02:11:07.137 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System CheIFU' has dimensions 362x37
+02:11:07.137 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:07.154 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System Check
+' has dimensions 347x74
+02:11:07.154 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System Check
+' has dimensions 347x74
+02:11:07.154 ../plymouth/src/plugins/controls/label-pango/plugin.c:325:size: Text 'Commencing System Check
+' has dimensions 347x74
+02:11:07.154 ../plymouth/src/libply-splash-graphics/ply-label.c:89:ply_labe: Unloading label control plugin
+02:11:26.608 ../plymouth/src/ply-boot-server.c:395:print_connection_process: connection is from pid 38060 (plymouth --quit) with parent pid 38059 (sudo plymouth --quit)
+02:11:26.608 ../plymouth/src/ply-boot-server.c:532:ply_boot_connection_on_r: got quit request
+02:11:26.608 ../plymouth/src/main.c:1455:on_quit                           : quitting (retain splash: false)
+02:11:26.608 ../plymouth/src/main.c:1472:on_quit                           : system not initialized so skipping saving boot-duration file
+02:11:26.608 ../plymouth/src/main.c:1477:on_quit                           : closing log
+02:11:26.608 ../plymouth/src/libply-splash-core/ply-device-manager.c:1425:p: deactivating keyboards
+02:11:26.608 ../plymouth/src/libply-splash-core/ply-keyboard.c:395:ply_keyb: No longer watching for keyboard input from renderer
+02:11:26.608 ../plymouth/src/main.c:1483:on_quit                           : unloading splash
+02:11:26.608 ../plymouth/src/libply-splash-core/ply-boot-splash.c:801:ply_b: telling splash to become idle
+02:11:26.608 ../plymouth/src/libply-splash-core/ply-boot-splash.c:777:on_id: splash now idle
+02:11:26.618 ../plymouth/src/main.c:1358:on_boot_splash_idle               : boot splash idle
+02:11:26.618 ../plymouth/src/main.c:1365:on_boot_splash_idle               : hiding splash
+02:11:26.618 ../plymouth/src/libply/ply-event-loop.c:971:ply_event_loop_sto: no matching timeout found for removal
+02:11:26.618 ../plymouth/src/main.c:1369:on_boot_splash_idle               : quitting splash
+02:11:26.618 ../plymouth/src/main.c:1234:quit_splash                       : quitting splash
+02:11:26.618 ../plymouth/src/main.c:1236:quit_splash                       : freeing splash
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-boot-splash.c:405:ply_b: freeing splash
+02:11:26.618 ../plymouth/src/libply/ply-event-loop.c:971:ply_event_loop_sto: no matching timeout found for removal
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-boot-splash.c:350:remov: removing pixel displays
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-boot-splash.c:364:remov: Removing 3840x2160 pixel display
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-device-manager.c:1425:p: deactivating keyboards
+02:11:26.618 ../plymouth/src/main.c:1245:quit_splash                       : Not retaining splash, so deallocating VT
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-terminal.c:976:ply_term: terminal is not for a VT
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-terminal.c:719:ply_term: restoring color palette
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-terminal.c:729:ply_term: stop watching SIGWINCH signal
+02:11:26.618 ../plymouth/src/libply-splash-core/ply-terminal.c:733:ply_term: setting buffered input
+02:11:26.618 ../plymouth/src/main.c:1371:on_boot_splash_idle               : quitting program
+02:11:26.619 ../plymouth/src/main.c:1300:quit_program                      : cleaning up devices
+02:11:26.619 ../plymouth/src/libply-splash-core/ply-device-manager.c:898:pl: freeing device manager
+02:11:26.619 ../plymouth/src/libply-splash-core/ply-renderer.c:94:ply_rende: Unloading renderer backend plugin
+02:11:26.619 ../plymouth/src/libply/ply-event-loop.c:971:ply_event_loop_sto: no matching timeout found for removal
+02:11:26.619 ../plymouth/src/main.c:1303:quit_program                      : exiting event loop
+02:11:26.619 ../plymouth/src/ply-boot-server.c:349:ply_boot_connection_on_q: quit complete
+02:11:26.619 ../plymouth/src/main.c:2615:main                              : exited event loop
+02:11:26.619 ../plymouth/src/libply-splash-core/ply-boot-splash.c:405:ply_b: freeing splash
+02:11:26.619 ../plymouth/src/main.c:2625:main                              : freeing terminal session
+02:11:26.619 ../plymouth/src/main.c:2631:main                              : exiting with code 0

@@ -1,0 +1,12 @@
+[Plymouth Theme]
+Name=Yorha
+Description=A theme based on the loading screen from the game NieR Automata
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes//yorha
+ScriptFile=/usr/share/plymouth/themes//yorha/yorha.script
+ConsoleLogBackgroundColor=0x00000000
+
+[script-env-vars]
+example_env_var=example env var value

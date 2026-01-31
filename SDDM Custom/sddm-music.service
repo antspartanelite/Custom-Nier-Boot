@@ -1,0 +1,13 @@
+[Unit]
+Description=SDDM Music Script
+After=sddm.service sound.target
+Wants=sound.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sddm-music.sh
+KillSignal=SIGTERM
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

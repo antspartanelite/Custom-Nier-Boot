@@ -1,0 +1,119 @@
+# Yorha theme script
+
+#DefinesIntegerToCharacterSet
+numChar[0]="A"; numChar[1]="B"; numChar[2]="C"; numChar[3]="D"; numChar[4]="E"; numChar[5]="F"; numChar[6]="G"; numChar[7]="H"; numChar[8]="I"; numChar[9]="J"; numChar[10]="K"; numChar[11]="L"; numChar[12]="M"; numChar[13]="N"; numChar[14]="O"; numChar[15]="P"; numChar[16]="Q"; numChar[17]="R"; numChar[18]="S"; numChar[19]="T"; numChar[20]="U"; numChar[21]="V"; numChar[22]="W"; numChar[23]="X"; numChar[24]="Y"; numChar[25]="Z";
+
+# Load background
+wallpaperImage = Image("background.png");
+scaledWallpaperImage = wallpaperImage.Scale(Window.GetWidth(), Window.GetHeight());
+wallpaper = Sprite(scaledWallpaperImage);
+wallpaper.SetZ(-100);
+
+loadingMessageSprite = Sprite();
+loadingMessageSprite.SetPosition(Window.GetWidth()/20, Window.GetHeight() / 20, 10000);
+loadingMessageTextImage = Image.Text("L O A D I N G",1,1,1,1, "Comfortaa 72");
+loadingMessageSprite.SetImage(loadingMessageTextImage);
+
+bootingMessageIndex=0;
+bootingMessageText[0] = " - BOOTING SYSTEM";
+bootingMessageText[1] = " - BOOTING SYSTEM .";
+bootingMessageText[2] = " - BOOTING SYSTEM . .";
+bootingMessageText[3] = " - BOOTING SYSTEM . . .";
+bootingMessageSprite = Sprite();
+bootingMessageSprite.SetPosition(Window.GetWidth()/20 + loadingMessageTextImage.GetWidth(), Window.GetHeight() / 20 + 34, 10000);
+bootingMessageTextImage = Image.Text(bootingMessageText[bootingMessageIndex],1,1,1,1, "Comfortaa 48");
+bootingMessageSprite.SetImage(bootingMessageTextImage);
+
+
+#Sets Message Rendering
+currentLogLines = 0;
+maxLogLines = 18;
+logs[0] = "Commencing System Check\n";
+log_sprite = Sprite();
+log_sprite.SetPosition(Window.GetWidth()/15, Window.GetHeight() /6, 0);
+combined = logs[0];
+targetText = logs[0];
+pendingUpdate = 1;
+
+fun message_callback(text){
+    currentLogLines++;
+    logs[currentLogLines] = text;
+
+    targetText = logs[0];
+    for (i = Math.Max(1, currentLogLines-maxLogLines); i <= currentLogLines; i++){
+    	if(i==currentLogLines){
+    		displayTextPointer = targetText.Length()-1;
+    	}
+        targetText = targetText + logs[i] + "\n";
+    }
+
+    pendingUpdate = 1;
+}
+Plymouth.SetMessageFunction(message_callback);
+
+
+
+fun scramble_text(text){
+    s = "";
+    for (i = 0; i < text.Length(); i++){
+        s = s + numChar[Math.Int(Math.Random()*26)];
+    }
+    return s;
+}
+
+
+
+#Method that runs based on configured refresh rate
+refreshesSinceLastSecond=0;
+displayText = "";
+scrambled = "";
+revealPos = 0;
+revealStep = 3;
+animating = 0;
+displayTextPointer=0;
+
+
+fun refresh_callback (){
+	# Start animation ONLY if idle
+    if (pendingUpdate == 1 && animating == 0){
+        scrambled = scramble_text(targetText);
+        revealPos = displayTextPointer;
+        animating = 1;
+        pendingUpdate = 0;
+    }
+
+    if (animating == 1){
+        revealPos = revealPos + revealStep;
+
+        if (revealPos >= targetText.Length()){
+            revealPos = targetText.Length();
+            animating = 0;
+            displayText = targetText;
+        } else {
+            displayText =
+                targetText.SubString(0, revealPos) +
+                scrambled.SubString(revealPos, revealPos+revealStep);
+        }
+
+        img = Image.Text(displayText, 1, 1, 1, 1, "Noto Sans 20");
+        log_sprite.SetImage(img);
+    }
+}
+  
+  
+refreshRate = 60;
+Plymouth.SetRefreshRate(refreshRate);
+Plymouth.SetRefreshFunction (refresh_callback);
+
+
+#----------------------------------------- Quit --------------------------------
+
+fun quit_callback ()
+{
+  logo.sprite.SetOpacity (1);
+}
+
+Plymouth.SetQuitFunction(quit_callback);
+
+
+
