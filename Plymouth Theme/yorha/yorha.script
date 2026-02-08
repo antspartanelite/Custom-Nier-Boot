@@ -74,7 +74,8 @@ displayTextPointer=0;
 
 
 fun refresh_callback (){
-	# Start animation ONLY if idle
+    refreshesSinceLastSecond++;
+    # Start animation ONLY if idle
     if (pendingUpdate == 1 && animating == 0){
         scrambled = scramble_text(targetText);
         revealPos = displayTextPointer;
@@ -97,6 +98,21 @@ fun refresh_callback (){
 
         img = Image.Text(displayText, 1, 1, 1, 1, "Noto Sans 20");
         log_sprite.SetImage(img);
+    }
+    if(refreshesSinceLastSecond == Math.Int(refreshRate/2) || refreshesSinceLastSecond == Math.Int(refreshRate)){
+		if(bootingMessageIndex < 3){
+			bootingMessageIndex++;
+		}
+		else{
+			bootingMessageIndex=0;
+		}
+		bootingMessageTextImage = Image.Text(bootingMessageText[bootingMessageIndex],1,1,1,1, "Comfortaa 48");
+		bootingMessageSprite.SetImage(bootingMessageTextImage);
+    }
+	
+    #A Second has passed so resets
+    if(refreshesSinceLastSecond >= refreshRate){
+	refreshesSinceLastSecond = 0;
     }
 }
   
